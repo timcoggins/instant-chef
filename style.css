@@ -29,6 +29,9 @@ body {
 
 .first-nav h2 {
   margin: 0;
+  height: 50px;
+  display: flex;
+  align-items: center;
 }
 
 .nav-bar a {
@@ -45,16 +48,17 @@ body {
   color: white;
 }
 
-.nab-bar-right {
+.nav-bar-right {
   float: right;
 }
 
 .logo {
-  background-image: url("images/logo.png");
-  height: 50px;
-  width: 50px;
+  background-image: url("images/logo4.png");
+  height: 30px;
+  width: 30px;
   background-size: contain;
   background-repeat: no-repeat;
+  margin: 10px;
 }
 
 .hero-image {
@@ -75,13 +79,20 @@ body {
   color: rgb(0, 0, 0);
 }
 
+.box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .selector-boxes {
   display: flex;
   flex-direction: column;
   margin-bottom: 10px;
 }
 
-.select-label {
+.box .select-label {
+  align-items: left;
   padding: 10px, 0px;
   margin: 5px;
 }
@@ -91,6 +102,7 @@ body {
   border-radius: 5px;
   font-size: 16px;
   padding: 9px;
+  width: 300px;
 }
 
 #find-button {
@@ -103,10 +115,11 @@ button {
   border-radius: 5px;
   background-color: grey;
   color: white;
-  font-weight: bold;
+  /*font-weight: bold;*/
   text-align: center;
   font-size: 18px;
-  padding: 8px;
+  padding: 12px;
+  margin-top: 10px;
 }
 
 button:hover {
@@ -126,7 +139,9 @@ button:hover {
   display: flex;
   place-items: center;
   margin: 10px 0;
-  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  /*box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;*/
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px,
+    rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
 }
 
 .recipe-card:hover {
@@ -143,11 +158,48 @@ button:hover {
 }
 
 .recipe-image {
-  /*background: url("http://placekitten.com/g/120/120");*/
-  background: url("./images/3.jpg");
+  /*background: url("./images/3.jpg");*/
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   height: 150px;
   width: 150px;
+  min-width: 150px;
+}
+
+@media only screen and (min-width: 700px) {
+  body {
+    width: 1200px;
+  }
+
+  .selector-boxes {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    min-width: 360px;
+    gap: 50px;
+    padding-top: 50px;
+    padding-bottom: 20px;
+  }
+  .select-label {
+    display: flex;
+    padding: 10px, 0px;
+    margin: 10px;
+  }
+  .recipe-card-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  .recipe-card {
+    width: 300px;
+    margin: 10px;
+  }
+  .nav-bar ul {
+    align-items: flex-end;
+  }
+  .recipe-heading {
+    padding: 20px 50px;
+  }
 }
