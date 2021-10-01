@@ -101,6 +101,13 @@ function filterRecipes() {
     if (meal === "All") return item;
     // If the meal is correct keep the item
     if (meal === item.meal) return item;
+
+    // dinner lunch fix TODO MAKE THIS NICER?
+    if (meal === "Lunch" || meal === "Dinner") {
+      if (item.meal === "Lunch" || item.meal === "Dinner") {
+        return item;
+      }
+    }
     // Discard the item if it doesnt meet the requirements
     return false;
   });

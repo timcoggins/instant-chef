@@ -1,6 +1,10 @@
 body {
   font-family: "Roboto", sans-serif;
   width: 360px;
+  /*
+  width: clamp(360px, 100%, 700px);
+  */
+  width: clamp(360px, 100%, 700px);
   box-sizing: border-box;
   margin: 0 auto;
   background: rgb(243, 243, 243);
@@ -19,41 +23,50 @@ body {
   font-size: 16px;
   padding: 8px;
   margin: 0;
-  background-color: #e7e6e3;
   list-style-type: none;
+  font-weight: 800;
 }
 
-.first-nav {
+.logo-bar {
   display: flex;
+  color: white;
 }
 
-.first-nav h2 {
+.logo-bar h2 {
   margin: 0;
   height: 50px;
   display: flex;
   align-items: center;
 }
 
+.nav-bar {
+  /*background: #d6d4d4;*/
+  background: #56909c;
+}
+
 .nav-bar a {
   text-decoration: none;
+  padding: 10px;
+  color: white;
 }
 
 .nav-bar a:hover {
-  background-color: black;
-  color: white;
+  background: rgb(111, 179, 192);
+  border-radius: 3px;
 }
 
-.nav-bar a.active {
+/*.nav-bar a.active {
   background-color: rgb(204, 243, 229);
   color: white;
 }
+*/
 
 .nav-bar-right {
   float: right;
 }
 
 .logo {
-  background-image: url("images/logo4.png");
+  background-image: url("images/logo5.png");
   height: 30px;
   width: 30px;
   background-size: contain;
@@ -89,6 +102,7 @@ body {
   display: flex;
   flex-direction: column;
   margin-bottom: 10px;
+  padding-top: 30px;
 }
 
 .box .select-label {
@@ -113,17 +127,18 @@ body {
 button {
   border: none;
   border-radius: 5px;
-  background-color: grey;
+  background-color: #56909c;
   color: white;
   /*font-weight: bold;*/
   text-align: center;
   font-size: 18px;
   padding: 12px;
   margin-top: 10px;
+  cursor: pointer;
 }
 
 button:hover {
-  background-color: pink;
+  background-color: rgb(111, 179, 192);
 }
 
 .recipe-heading {
@@ -157,6 +172,10 @@ button:hover {
   color: darkgray;
 }
 
+.recipe-text h3 {
+  margin: 0;
+}
+
 .recipe-image {
   /*background: url("./images/3.jpg");*/
   background-position: center;
@@ -169,7 +188,12 @@ button:hover {
 
 @media only screen and (min-width: 700px) {
   body {
+    /*
     width: 1200px;
+    width: min(700px, calc(70% + 100px));
+    width: clamp(700px, 100%, 1200px);
+    */
+    width: clamp(700px, 100%, 1200px);
   }
 
   .selector-boxes {
@@ -196,9 +220,18 @@ button:hover {
     width: 300px;
     margin: 10px;
   }
-  .nav-bar ul {
-    align-items: flex-end;
+
+  .nav-bar {
+    display: flex;
+    justify-content: space-between;
   }
+
+  .nav-bar ul {
+    margin-left: 20px;
+    gap: 40px;
+    margin-top: 8px;
+  }
+
   .recipe-heading {
     padding: 20px 50px;
   }

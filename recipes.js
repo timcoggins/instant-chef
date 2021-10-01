@@ -99,7 +99,7 @@ const recipes = [
       "icing sugar",
       "mini marshmallows"
     ],
-    image: "images/3.jpg",
+    image: "images/rocky-road.jpg",
     link: "https://www.bbcgoodfood.com/recipes/easy-rocky-road",
     meal: "Dessert",
     time: "20 minutes"
@@ -134,7 +134,7 @@ const recipes = [
       "oil",
       "cinnamon"
     ],
-    image: "images/Churros.jpg",
+    image: "images/churros.jpg",
     link: "https://www.cookingclassy.com/churros/",
     meal: "Dessert",
     time: "35 minutes"
