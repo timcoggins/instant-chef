@@ -1,24 +1,27 @@
 # Instant Chef!
-Instant Chef is b
+Instant Chef is an application to quickly find simple, easy to cook recipes by searching for which ingredients you already have in your fridge. The project is currently a series of static HTML page which dynamically generates links to recipes from a database stored in the file: data.js
 
-Description
+This project written by Liana, Jana and Tim was our first project at the Wild Code School. 
 
+View the live site at <https://instant-chef.netlify.app/>
 
-Requirements
+![Screenshot of Instant Chef](images/screenshot.png)
 
+## Requirements & Installation
+To use this project on your own server, simply clone the code and server the pages on an HTTP server.
 
+Alternatively, you could use Parcel to build a minified version.
 
-Installation
-- No installation is required, simply host the contents on an http server.
-- Alternatively, you can use the included package.json to install and run a parcel server
+## Usage
+Simply use the dropdown selectors to filter recipes by the type meal or ingredients. 
 
-
-How to use it?
-
-
-
-Credits
+To add a recipe, add a new Recipe object to the data.js file
 
 
+### Credits
+- Liana van Zyl - <https://github.com/Li-create2021>
+- Jana Kudlickova - <https://github.com/JanaKudlickova>
+- Tim Coggins - <https://github.com/timcoggins>
 
-License
+
+### License
