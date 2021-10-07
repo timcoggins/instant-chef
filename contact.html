@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Instant Chef</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <!--Navigation Bar-->
+    <nav class="nav-bar">
+      <div class="logo-bar">
+        <div class="logo"></div>
+        <h2>Instant Chef</h2>
+      </div>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="popular.html">Popular</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+
+    <!-- HERO IMAGE -->
+    <div class="hero-image">
+      <div class="hero-text">
+        <h1>We'd Love to Hear from You</h1>
+      </div>
+    </div>
+
+    <div class="wrapper">
+      <div class="contact-container">
+        <div class="contact-header">
+          <h2 id="form-title">Contact Us</h2>
+          <p>
+            We love receiving your feedback, new ideas and suggestions for new
+            recipes. Please, keep them coming!
+          </p>
+        </div>
+
+        <div class="form-center">
+          <form>
+            <label for="Name" class="form-label">Name</label>
+            <div class="form-box">
+              <input
+                type="text"
+                id="Name"
+                class="input-field"
+                name="Name"
+                placeholder="John Doe"
+                required
+              />
+            </div>
+
+            <label for="Email" class="form-label">Email</label>
+            <div class="form-box">
+              <input
+                type="email"
+                id="Email"
+                class="input-field"
+                name="Email"
+                placeholder="me@example.com"
+                required
+              />
+            </div>
+
+            <label for="Message" class="form-label">Your message</label>
+            <div class="form-box">
+              <textarea
+                id="Message"
+                name="Message"
+                rows="10"
+                cols="41"
+                maxlength="3000"
+                required
+              ></textarea>
+            </div>
+
+            <div>
+              <button type="submit" id="message-button">
+                Send Message
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+
+      <div id="thank-you-note"></div>
+      <!-- End of the Wrapper -->
+    </div>
+    <!-- Footer-->
+    <footer>
+      <div class="footer-image"></div>
+      <div class="footer-text">Created by Liana, Jana and Tim. 2021</div>
+    </footer>
+
+    <script type="module" src="./js/contact.js"></script>
+  </body>
+</html>
