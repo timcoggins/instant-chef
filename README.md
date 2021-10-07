@@ -1,7 +1,7 @@
 # Instant Chef!
 Instant Chef is an application to quickly find simple, easy to cook recipes by searching for which ingredients you already have in your fridge. The project is currently a series of static HTML pages which dynamically generates links to recipes from a database stored in the file: data.js
 
-This project written by Liana, Jana and Tim was our first project at the Wild Code School. 
+This project was written by Liana, Jana and Tim and is our first project at the Wild Code School. 
 
 View the live site at <https://instant-chef.netlify.app/>
 
