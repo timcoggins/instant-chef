@@ -25,3 +25,8 @@ To add a recipe, add a new Recipe object to the data.js file
 
 
 ### License
+MIT License
+
+Copyright (c) 2021 Tim Coggins, Liana van Zyl, Jana Kudlickova
+
+See LICENSE file for more information
