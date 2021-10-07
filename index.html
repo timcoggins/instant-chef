@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <title>Instant Chef</title>
     <meta charset="UTF-8" />
@@ -13,14 +13,15 @@
     />
     <link rel="stylesheet" href="style.css" />
 
-    
-    <link rel="apple-touch-icon" sizes="120x120" href="/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <!-- ICON LINKS -->
+    <link rel="apple-touch-icon" sizes="120x120" href="/images/icons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/images/icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/images/icons/favicon-16x16.png">
     <link rel="manifest" href="/site.webmanifest">
-    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="mask-icon" href="/images/icons/safari-pinned-tab.svg" color="#5bbad5">
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="theme-color" content="#ffffff">
+    <!-- END ICON LINKS -->
 
   </head>
 
@@ -32,22 +33,23 @@
         <h2>Instant Chef</h2>
       </div>
       <ul>
-        <li><a href="Home">Home</a></li>
-        <li><a href="Popular">Popular</a></li>
-        <li><a href="About Us">About Us</a></li>
-        <li><a href="Contact">Contact</a></li>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="popular.html">Popular</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="contact.html">Contact</a></li>
       </ul>
     </nav>
-  
-    <!-- HERO IMAGE -->
+
+    <!-- Hero Image -->
     <div class="hero-image">
       <div class="hero-text">
         <h1>Cooking made easy!</h1>
       </div>
     </div>
-
+    <!-- Wrapper -->
     <div class="wrapper">
-      <!-- SELECTORS -->
+      <!-- Selectors -->
+
       <section class="selector-boxes">
         <div class="box">
           <label class="select-label">Meal</label>
@@ -75,66 +77,29 @@
         </div>
       </section>
 
-      <!-- FIND BUTTON -->
+      <!-- Find Button -->
       <div id="find-button">
         <button type="button" id="find-recipe-button">Find Recipe</button>
       </div>
 
-      <!-- RECIPE CARDS -->
-      <div class="recipe-container">
+      <!-- Recipe Cards -->
+      <section class="recipe-container">
         <div class="recipe-heading">
           <h2>Your Recipes</h2>
           <p id="user-message">Here's some perfect recipes for you, enjoy!</p>
         </div>
-        <div class="recipe-card-container">
-          <!--
-          <div class="recipe-card" >
-          <div class="recipe-image"></div>
-          <div class="recipe-text">
-            <h3>Broccoli and egg pizza</h3>
-            <p>delicious 2hr pizza</p>
-          </div>
-        </div>
-        
-          <div class="recipe-card">
-            <div class="recipe-image"></div>
-            <div class="recipe-text">
-              <h3>Broccoli and egg soup</h3>
-              <p>A hearty winter soup</p>
-            </div>
-          </div>
-          <div class="recipe-card">  
-            <div class="recipe-image"></div>
-            <div class="recipe-text">
-              <h3>Broccoli and egg pita</h3>
-              <p>Time: 40mins</p>
-            </div>
-          </div>
-          <div class="recipe-card-container">
-            <div class="recipe-card">
-              <div class="recipe-image"></div>
-              <div class="recipe-text">
-                <h3>Broccoli and egg pizza</h3>
-                <p>delicious 2hr pizza</p>
-              </div>
-            </div>
-            <div class="recipe-card">
-              <div class="recipe-image"></div>
-              <div class="recipe-text">
-                <h3>Broccoli and egg soup</h3>
-                <p>A hearty winter soup</p>
-              </div>
-            </div>
-            <div class="recipe-card">  
-              <div class="recipe-image"></div>
-              <div class="recipe-text">
-                <h3>Broccoli and egg pita</h3>
-                <p>Time: 40mins</p>
-              </div>
-            </div>
-          -->
-      </div>
+        <!-- Main container where cards are drawn -->
+        <div class="recipe-card-container"></div>
+      </section>
+      <!-- End of the Wrapper-->
     </div>
-    <script type="module" src="script.js"></script>
+
+    <!-- Footer-->
+    <footer>
+      <div class="footer-image"></div>
+      <div class="footer-text">Created by Liana, Jana and Tim. 2021</div>
+    </footer>
+    <!-- Import Script -->
+    <script type="module" src="./js/home.js"></script>
   </body>
 </html>

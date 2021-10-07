@@ -12,7 +12,7 @@ body {
 
 .wrapper {
   background: white;
-  padding: 0 10px;
+  padding: 0 10px 20px 10px;
 }
 
 .nav-bar ul {
@@ -54,12 +54,6 @@ body {
   background: rgb(111, 179, 192);
   border-radius: 3px;
 }
-
-/*.nav-bar a.active {
-  background-color: rgb(204, 243, 229);
-  color: white;
-}
-*/
 
 .nav-bar-right {
   float: right;
@@ -162,7 +156,6 @@ button:hover {
 .recipe-card:hover {
   background-color: rgb(243, 241, 241);
   opacity: 0.7;
-  cursor: pointer;
 }
 
 .recipe-text {
@@ -178,7 +171,6 @@ button:hover {
 }
 
 .recipe-image {
-  /*background: url("./images/3.jpg");*/
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -187,6 +179,154 @@ button:hover {
   min-width: 150px;
 }
 
+/*New styling starts here 5 Oct*/
+
+/*CONTACT FORM*/
+
+.contact-container {
+  display: flex;
+  flex-direction: column;
+}
+/*
+.contact-header {
+  width: 50%;
+}
+*/
+
+#form-title {
+  text-align: center;
+  margin-top: 0;
+  padding: 40px;
+}
+
+.contact-header p {
+  text-align: center;
+  padding: 20px;
+}
+
+.form-center {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.form-label {
+  display: flex;
+  padding: 10px, 0px;
+  margin-bottom: 10px;
+}
+
+.form-box {
+  margin-bottom: 10px;
+}
+
+.input-field {
+  width: 330px;
+  height: 35px;
+  font-size: 16px;
+  border: 1px solid black;
+  border-radius: 5px;
+  padding: 0 10px;
+}
+
+#Message {
+  border: 1px solid black;
+  border-radius: 5px;
+  width: 345px;
+}
+
+#thank-you-note {
+  text-align: center;
+  padding: 20px;
+  margin-top: 50px;
+  font-weight: bold;
+  /*background-color: rgb(229, 240, 244);*/
+  visibility: hidden;
+}
+
+/*ABOUT US PAGE*/
+
+.about-us-intro {
+  margin-top: 0px;
+  margin-bottom: 20px;
+  text-decoration-style: bold;
+  text-align: center;
+  font-size: 18px;
+  padding-top: 20px;
+}
+
+.headshotsContainer {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  align-content: center;
+}
+
+/*TEAM INTRO CARDS*/
+
+/*TIM-CARD*/
+.tim-card {
+  flex-shrink: 1;
+  flex-basis: 300;
+  width: 200;
+  height: 300;
+  padding: 10px;
+  margin: 0;
+}
+
+.tim-card h2 {
+  font-size: 18px;
+  text-align: center;
+}
+
+.tim-card p {
+  text-align: center;
+}
+
+/*JANA_CARD*/
+
+.jana-card {
+  flex-shrink: 1;
+  flex-basis: 300;
+  width: 200;
+  height: 300;
+  padding: 10px;
+  margin: 0;
+}
+
+.jana-card h2 {
+  font-size: 18px;
+  text-align: center;
+}
+
+.jana-card p {
+  text-align: center;
+}
+
+/*LIANA-CARD*/
+
+.liana-card {
+  flex-shrink: 1;
+  flex-basis: 300;
+  width: 200;
+  height: 300;
+  padding: 10px;
+  margin: 0;
+}
+
+.liana-card h2 {
+  font-size: 18px;
+  text-align: center;
+}
+
+.liana-card p {
+  text-align: center;
+}
+
+/**
+* MEDIA QUERIES FOR DESKTOP
+*/
 @media only screen and (min-width: 700px) {
   body {
     /*
@@ -236,4 +376,65 @@ button:hover {
   .recipe-heading {
     padding: 20px 50px;
   }
+
+  /*CONTACT FORM*/
+
+  .contact-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .contact-header {
+    width: 50%;
+  }
+
+  #form-title {
+    text-align: left;
+    margin-top: 0;
+    padding-left: 0;
+    padding-top: 30px;
+  }
+
+  .contact-header p {
+    text-align: left;
+    margin-right: 150px;
+  }
+
+  /*ABOUT US*/
+
+  .about-us-intro {
+    text-align: left;
+    margin-top: 0;
+    padding: 18px;
+    font-size: 14px;
+  }
+
+  .headshotsContainer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    place-content: center;
+  }
+
+  /* MEDIA QUERY ENDS HERE */
+}
+
+/* FOOTER STYLE RULES */
+footer {
+  display: flex;
+  padding: 10px;
+  place-content: center;
+  background: #56909c;
+  color: white;
+  font-size: 12px;
+}
+
+footer .footer-image {
+  background-image: url("images/logo5.png");
+  height: 13px;
+  width: 13px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin-right: 10px;
 }
