@@ -16,9 +16,9 @@ document.getElementById("message-button").addEventListener("click", (event) => {
  */
 function validateInput() {
     // Get the users vales from the DOM
-    const nameInput = document.getElementById("Name").value;
-    const emailInput = document.getElementById("Email").value;
-    const messageInput = document.getElementById("Message").value;
+    const nameInput = document.getElementById("name-input").value;
+    const emailInput = document.getElementById("email-input").value;
+    const messageInput = document.getElementById("message-box").value;
 
     // If any of them are blank show an error message
     if (!nameInput) userMessage("Please fill out the name field", true);
@@ -34,7 +34,7 @@ function validateInput() {
  */
 function userMessage(message, isError) {
     // Get the message element from the DOM
-    const messageBox = document.getElementById("thank-you-note");
+    const messageBox = document.getElementById("submit-message");
     // Make the element visible
     messageBox.style.visibility = "visible";
     // Change the colour if its an error

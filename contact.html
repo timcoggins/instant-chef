@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Instant Chef</title>
+    <title>Instant Chef - Contact Us</title>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
@@ -12,6 +12,16 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="style.css" />
+
+    <!-- ICON LINKS -->
+    <link rel="apple-touch-icon" sizes="120x120" href="/images/icons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/images/icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/images/icons/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/images/icons/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <!-- END ICON LINKS -->
   </head>
 
   <body>
@@ -29,7 +39,7 @@
       </ul>
     </nav>
 
-    <!-- HERO IMAGE -->
+    <!-- Hero Image -->
     <div class="hero-image">
       <div class="hero-text">
         <h1>We'd Love to Hear from You</h1>
@@ -39,20 +49,22 @@
     <div class="wrapper">
       <div class="contact-container">
         <div class="contact-header">
-          <h2 id="form-title">Contact Us</h2>
+          <h2 class="form-title">Contact Us</h2>
+          <p>Getting in touch is easy!</p>
           <p>
-            We love receiving your feedback, new ideas and suggestions for new
-            recipes. Please, keep them coming!
+            We love receiving your feedback, new ideas or suggestions. Feel free
+            to share your own recipes, ask a question or simply say hello. Your
+            comments make our Instant Chef team very happy!
           </p>
         </div>
 
         <div class="form-center">
           <form>
-            <label for="Name" class="form-label">Name</label>
+            <label for="name-input" class="form-label">Name</label>
             <div class="form-box">
               <input
                 type="text"
-                id="Name"
+                id="name-input"
                 class="input-field"
                 name="Name"
                 placeholder="John Doe"
@@ -60,11 +72,11 @@
               />
             </div>
 
-            <label for="Email" class="form-label">Email</label>
+            <label for="email-input" class="form-label">Email</label>
             <div class="form-box">
               <input
                 type="email"
-                id="Email"
+                id="email-input"
                 class="input-field"
                 name="Email"
                 placeholder="me@example.com"
@@ -72,10 +84,10 @@
               />
             </div>
 
-            <label for="Message" class="form-label">Your message</label>
+            <label for="message-box" class="form-label">Your message</label>
             <div class="form-box">
               <textarea
-                id="Message"
+                id="message-box"
                 name="Message"
                 rows="10"
                 cols="41"
@@ -93,15 +105,17 @@
         </div>
       </div>
 
-      <div id="thank-you-note"></div>
+      <div id="submit-message"></div>
       <!-- End of the Wrapper -->
     </div>
+
     <!-- Footer-->
     <footer>
       <div class="footer-image"></div>
       <div class="footer-text">Created by Liana, Jana and Tim. 2021</div>
     </footer>
 
+    <!-- Javascript imports -->
     <script type="module" src="./js/contact.js"></script>
   </body>
 </html>
