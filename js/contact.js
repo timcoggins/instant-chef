@@ -23,6 +23,8 @@ function validateInput() {
     // If any of them are blank show an error message
     if (!nameInput) userMessage("Please fill out the name field", true);
     else if (!emailInput) userMessage("Please fill out the email field", true);
+    else if (!emailInput.includes('@')) userMessage("Please enter a valid email address", true);
+    else if (!emailInput.includes('.')) userMessage("Please enter a valid email address", true);
     else if (!messageInput) userMessage("Please fill out the message field", true);
     else userMessage("<p>Thank you for your message!</p> <p>You have instantly become a member of our cooking community!</p>", false);
 }
