@@ -125,8 +125,6 @@ Dropdown boxes on the Home Page
 }
 
 .box .select-label {
-  align-items: left;
-  padding: 10px, 0px;
   margin: 5px;
 }
 
@@ -178,9 +176,7 @@ Recipes Cards
   display: flex;
   place-items: center;
   margin: 10px 0;
-  /*box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;*/
-  box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px,
-    rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0 1px 3px 0, rgba(0, 0, 0, 0.06) 0 1px 2px 0;
 }
 
 .recipe-card:hover {
@@ -218,8 +214,7 @@ About Us Page
 .about-header-container {
   display: flex;
   flex-direction: column;
-  align-items: left;
-  margin-top: 0px;
+  margin-top: 0;
   padding: 20px 0;
 }
 
@@ -296,7 +291,7 @@ Contact Page Styles
 
 .form-label {
   display: flex;
-  padding: 10px 0px;
+  padding: 10px 0;
   margin-bottom: 10px;
 }
 
@@ -392,7 +387,7 @@ MEDIA QUERIES FOR DESKTOP
   }
   .select-label {
     display: flex;
-    padding: 10px, 0px;
+    padding: 10px 0;
     margin: 10px;
   }
   .recipe-card-container {
